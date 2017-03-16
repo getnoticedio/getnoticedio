@@ -74,6 +74,12 @@ $(document).ready(function() {
         if (!isValidEmailAddress($('#emailInput').val().trim())) {
             $('<div class="form-error">Invalid Email</div>').insertAfter('#emailInput');
             return false;
+        }else{
+            fbq('track', 'Lead', {
+                value: 10.00,
+                currency: 'CAD'
+            });
+
         }
     })
 });
