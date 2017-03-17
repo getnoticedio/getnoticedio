@@ -13,11 +13,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/flexslider.css">
-    <link rel="stylesheet" href="css/jquery.fancybox.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/flexslider.css">
+    <link rel="stylesheet" href=/"css/jquery.fancybox.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/responsive.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <script type="text/javascript">
@@ -28,10 +28,18 @@
     </script>
 </head>
 <body>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.8&appId=1950156078548189";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
 	<section class="banner" role="banner">
         <header id="header">
             <div class="header-content clearfix">
-                <a class="logo" href="#"><img src="images/LogoWhite.png" alt="getNoticed"></a>
+                <a class="logo" href="/"><img src="/images/LogoWhite.png" alt="getNoticed"></a>
                 <nav class="navigation" role="navigation">
                     <ul class="primary-nav">
                         <li><a href="#how-it-works">How It Works</a></li>
@@ -46,15 +54,16 @@
         <div class="container">
             <div class="col-md-10 col-md-offset-1">
                 <div class="banner-text text-center">
-                    <h1>We Market Professionals.</h1>
-                    <p class="tagline">You're busy, so focus on what you do best, let us handle your digital presence.<br/><br/>
-                    <i class="fa fa-check-square-o" aria-hidden="true"></i> Find Opportunities 
-                    <i class="fa fa-check-square-o" aria-hidden="true"></i> Get Discovered  
-                    <i class="fa fa-check-square-o" aria-hidden="true"></i> Build Your Network 
-                    <i class="fa fa-check-square-o" aria-hidden="true"></i> Stay Up To Date
-                    
+                    <h1>Thank you!</h1>
+                    <p class="tagline">We're working hard to bring this tool to market as soon as possible. We'll keep you updated!<br/><br/>
+                    If you think others will benefit, share it with them!
                     <br/><br/>
-                    <a href="#how-it-works" class="btn btn-large scrollTo trackThis" data-event-category="Landing Page" data-event-action="Learn More" data-event-label="Hero">Learn More</a>
+                        
+                        <div class="fb-share-button" data-href="http://www.getnoticed.io" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.getnoticed.io%2F&amp;src=sdkpreparse">Share</a></div>
+                    
+                    <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+<script type="IN/Share" data-url="http://www.getnoticed.io"></script>
+                        
 
                 </div><!-- banner text -->
             </div>
@@ -253,14 +262,14 @@
     </div><!-- /.modal -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
-    <script src="js/jquery.fancybox.pack.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/retina.min.js"></script>
-    <script src="js/modernizr.js"></script>
-    <script src="js/main.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/jquery.flexslider-min.js"></script>
+    <script src="/js/jquery.fancybox.pack.js"></script>
+    <script src="/js/jquery.waypoints.min.js"></script>
+    <script src="/js/retina.min.js"></script>
+    <script src="/js/modernizr.js"></script>
+    <script src="/js/main.js"></script>
     
 </body>
 </html>
