@@ -81,5 +81,38 @@ $(document).ready(function() {
             });
 
         }
-    })
+    });
+    if($('.scrollTo').length>0){
+        
+        $('.scrollTo').on('click', function(ev){
+            var goTo = $(this).attr('href');
+            $("html, body").animate({ scrollTop: $(goTo).offset().top });
+        });
+    }
+    
+    //Button Tracker
+    
+    if($('.trackThis').length>0){
+        
+        $('.trackThis').on('click', function(event){
+            console.log('tracking');
+            var category = $(this).attr('data-event-category');
+            var action =  $(this).attr('data-event-action');
+            var label = $(this).attr('data-event-label');
+            var value = $(this).attr('data-event-value');
+            
+            analytics.track(action, {
+              category: category, 
+              label: label,
+              value: value!==undefined?value:0
+            });
+        });
+    }
+    
+    $('.plan-cta a').on('click', function(){
+        var plan = $(this).attr('data-event-label');
+        $('#earlyModal input[type="submit"]').attr('data-event-label', plan);
+    });
+    
+    
 });
