@@ -26,15 +26,7 @@ $(document).ready(function() {
 		offset: '75%'
 	});
 
-	// Fancybox
-	$('.work-box').fancybox();
-
-	// Flexslider
-	$('.flexslider').flexslider({
-		animation: "fade",
-		directionNav: false,
-	});
-
+	
 	// Page Scroll
 	var sections = $('section')
 		nav = $('nav[role="navigation"]');
@@ -95,7 +87,7 @@ $(document).ready(function() {
     if($('.trackThis').length>0){
         
         $('.trackThis').on('click', function(event){
-            console.log('tracking');
+       
             var category = $(this).attr('data-event-category');
             var action =  $(this).attr('data-event-action');
             var label = $(this).attr('data-event-label');
