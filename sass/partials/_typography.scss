@@ -1,0 +1,44 @@
+/* ==========================================================================
+Typography
+========================================================================== */
+body{
+    font-size: $font-size;
+}
+p {
+	
+	line-height: $line-height;
+	color: $font-color;
+}
+h1 {
+	font-size: $h1-font-size;
+	color: $base-color;
+}
+h2 {
+	font-size: $h2-font-size;
+	color: $base-color;
+    margin-bottom: 50px;
+}
+h3 {
+	font-size: $h3-font-size;
+	color: $base-color;
+	font-weight: $light;
+    margin: 0;
+}
+h4 {
+	font-size: $h4-font-size;
+	color: $base-color;
+	font-weight: $normal;
+}
+h5 {
+	font-size: $h5-font-size;
+	color: $base-color;
+	text-transform: uppercase;
+	font-weight: $bold;
+}
+input{
+    &[type=input], &[type=email]{
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+    }
+}
