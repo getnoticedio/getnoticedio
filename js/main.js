@@ -77,6 +77,7 @@ $(document).ready(function() {
     if($('.scrollTo').length>0){
         
         $('.scrollTo').on('click', function(ev){
+            ev.preventDefault();
             var goTo = $(this).attr('href');
             $("html, body").animate({ scrollTop: $(goTo).offset().top });
         });
